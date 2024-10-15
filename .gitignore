@@ -2,3 +2,5 @@
 out/
 CMakeSettings.json
 thirdparty/
+build/
+.vscode/

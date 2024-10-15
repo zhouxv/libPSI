@@ -87,7 +87,18 @@ def Build(projectName, argv):
     if not sudo:
         argv.append("-DSUDO_FETCH=OFF")
 
-    argv.append("-DENABLE_ALL_PSI=ON")
+    # argv.append("-DENABLE_ALL_PSI=ON")
+    argv.append("-DENABLE_DCW_PSI=OFF")
+    argv.append("-DENABLE_DKT_PSI=OFF")
+    argv.append("-DENABLE_GRR_PSI=OFF")
+    argv.append("-DENABLE_RR16_PSI=OFF")
+    argv.append("-DENABLE_RR17_PSI=OFF")
+    argv.append("-DENABLE_RR17B_PSI=OFF")
+    argv.append("-DENABLE_KKRT_PSI=ON")
+    argv.append("-DENABLE_ECDH_PSI=OFF")
+    argv.append("-DENABLE_DRRN_PSI=ON")
+    argv.append("-DENABLE_PRTY_PSI=OFF")
+
     generator = getGenerator(argv)
 
     # do not automaticly download dependancies

@@ -29,6 +29,7 @@ if(NOT EXISTS ${BUILD_DIR} OR NOT ${DEP_NAME}_FOUND OR LIBOTE_DEV)
                        -DVERBOSE_FETCH=${VERBOSE_FETCH}
                        -DENABLE_ALL_OT=ON
                        -DENABLE_RELIC=ON
+                       -DRELIC_C_FLAGS="-DMULTI=PTHREAD"
                        )
     set(BUILD_CMD     ${CMAKE_COMMAND} --build ${BUILD_DIR} --config ${CMAKE_BUILD_TYPE})
 
